@@ -25,10 +25,10 @@ def predict():
         nparr = np.frombuffer(file_bytes, np.uint8)
         image = cv2.imdecode(nparr, cv2.IMREAD_COLOR)  # Read image using OpenCV
 
-        # Convert BGR to RGB
+        # Convert BGR to RGB format
         image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         
-        # Resize to match model input
+        # Resize to 64 x 64 to match model input
         image_resized = cv2.resize(image, (64, 64))
 
         # Normalize and add batch dimension
