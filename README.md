@@ -1,6 +1,6 @@
-# Road Sign Classification Flask App
+# Road Sign Classification
 
-This is a Flask web application that uses a TensorFlow model to classify road sign images. The app expects cropped images that contain only the road sign, and it will return the predicted class of the road sign along with the model's confidence score.
+This is a Flask API that uses a TensorFlow model to classify road sign images. The app expects cropped images that contain only the road sign, and it will return the predicted class of the road sign along with the model's confidence score.
 
 ## Features
 
